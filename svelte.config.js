@@ -13,7 +13,7 @@ const config = {
 	},
 	preprocess: vitePreprocess(),
 	paths:{
-		base: "/repo-name"
+		base: process.env.NODE_ENV === "production" ? "/sveltekit" : "",
 	}
 };
 

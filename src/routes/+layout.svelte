@@ -1,6 +1,7 @@
 <script>
     import "../app.css"
     import {Button, Dropdown, DropdownItem, Chevron} from 'flowbite-svelte'
+    import {base} from '$app/paths'
     
 </script>
    
@@ -13,7 +14,7 @@
    
      <div class="items-end font-bold text-xl flex flex-row p-5 font-serif self-center">
        <div class="rounded-full h-14 w-14 p-5 bg-gray-500 self-center bg-center bg-cover bg-[url('https://www.fussball.de/export.media/-/action/getLogo/format/2/id/00ES8GNBJO0000A0VV0AG08LVUPGND5I')]"></div>
-       <a class="text-3xl p-5" href="/"> SV Eintrach Reichenwalde </a>
+       <a class="text-3xl p-5" href="{base}/"> SV Eintrach Reichenwalde </a>
      </div>
    
      <!-- <div id="nav-icon" class="h-16 w-16 p-2">
@@ -30,7 +31,7 @@
 
             <Button btnClass="flex justify-between items-center"><Chevron>Manschaften</Chevron></Button>
             <Dropdown>
-                <DropdownItem><a href="/manschaften/c-jugend">C-Jugend</a></DropdownItem>
+                <DropdownItem><a href="{base}/manschaften/c-jugend">C-Jugend</a></DropdownItem>
                 <DropdownItem>D-Jugend</DropdownItem>
                 <DropdownItem>E-Jugend</DropdownItem>
             </Dropdown>
@@ -64,7 +65,7 @@
          </li>
    
    
-           <li class="mx-4 order-first hover:underline"><a href="/kontakt">Kontakt</a></li>
+           <li class="mx-4 order-first hover:underline"><a href="{base}/kontakt">Kontakt</a></li>
          </ul>
      </div>
    </nav>
