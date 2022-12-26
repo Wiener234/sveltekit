@@ -5,11 +5,14 @@ import { vitePreprocess } from '@sveltejs/kit/vite';
 const config = {
 	kit: {
 		adapter: adapter(),
+	   	paths: {
+	     	base: process.env.NODE_ENV === "production" ? "/sveltekit" : "",
+	   	},
 	},
 	preprocess: vitePreprocess(),
-	paths:{
-		base: process.env.NODE_ENV === "production" ? "/sveltekit" : "",
-	}
+	// paths:{
+	// 	base: "/sveltekit",
+	// }
 };
 
 export default config;
