@@ -79,8 +79,8 @@
     <div class="mx-6">
     <p>© SV Eintracht Reichenwalde - 2022</p>
     <div class="flex flex-row list-none">
-      <li class="mr-3"><a href="">Impressum</a></li>
-      <li class="mr-3"><a href="">Kontakt</a></li>
+      <li class="mr-3 hover:underline"><a href="">Impressum</a></li>
+      <li class="mr-3 hover:underline"><a href="">Kontakt</a></li>
     </div>
     </div>
 </footer>
