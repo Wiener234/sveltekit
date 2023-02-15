@@ -1,11 +1,11 @@
-#Website Reichenwalde
+# Website Reichenwalde
 
-##Ideen
+## Ideen
 
--[ ] Integrate rendering page from markdown
+- [ ] Integrate rendering page from markdown
 
-##Bugs
+## Bugs
 
-##Work in progress
+## Work in progress
 
-##Finished
+## Finished
