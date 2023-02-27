@@ -2,6 +2,8 @@
 
 ## Ideen
 
+- [ ] Add Impressum
+
 - [ ] Integrate rendering page from markdown
 
 ## Bugs
