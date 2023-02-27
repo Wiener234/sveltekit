@@ -43,7 +43,10 @@
    </nav>
    </header>
 
-<slot></slot>
+   <main class="text-black dark:text-white dark:bg-gray-800  min-h-full mx-72 my-10">
+    <slot></slot>
+   </main>
+
 
 
 
