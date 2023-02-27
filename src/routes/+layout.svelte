@@ -26,42 +26,14 @@
      <div class="items-end flex-grow p-5 list-none self-center text-xl font-semibold">
          <ul class="flex flex-row-reverse">
            <li class="mx-4 order-last  hover:underline">?????????</li>
-           <!-- <li class="mx-4  hover:underline">Manschaft</li> -->
            <li class="mx-4 hover:underline">
 
             <Button btnClass="flex justify-between items-center"><Chevron>Manschaften</Chevron></Button>
             <Dropdown>
                 <DropdownItem><a href="{base}/manschaften/c-jugend">C-Jugend</a></DropdownItem>
-                <DropdownItem>D-Jugend</DropdownItem>
-                <DropdownItem>E-Jugend</DropdownItem>
+                <DropdownItem><a href="{base}/manschaften/d-jugend">D-Jugend</a></DropdownItem>
+                <DropdownItem><a href="{base}/manschaften/e-jugend">E-Jugend</a></DropdownItem>
             </Dropdown>
-
-
-
-
-
-
-
-
-
-             <!-- <button id="dropdownNavbarButton" data-dropdown-toggle="dropdown" class="flex justify-between items-center">Manschaften<svg class="ml-1 w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button> -->
-           
-   
-   
-             <!-- Dropdown menu -->
-             <!-- <div id="dropdown" class="hidden z-999 w-28 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
-                 <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownNavbarButton">
-                   <li>
-                     <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">E-Jugend</a>
-                   </li>
-                   <li>
-                     <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">C-Jugend</a>
-                   </li>
-                   <li>
-                     <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">D-Jugend</a>
-                   </li>
-                 </ul>
-             </div> -->
          </li>
    
    
