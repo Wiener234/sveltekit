@@ -21,12 +21,30 @@
         margin-right: 0;
         padding-left: 40px;
     }
+    p {
+       padding-left: 80px; 
+       text-align: left;
+        
+    }
+
+
+    /* Custom style tags for news site*/
+    /*p.publish{
+        text-align: center;
+        padding-left: 0;
+    }*/
+
+
     /* Custom style tags for website*/
     .ul{ /* to disable ul styling | add to every ul element*/
-        dislplay: block;
+        display: block;
         list-style-type: none;
         padding-left: 0;
         margin-top: 0;
+    }
+    .p{
+        padding-left: 0;
+        text-align: left;
     }
 }
 

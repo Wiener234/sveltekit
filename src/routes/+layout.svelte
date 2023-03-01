@@ -9,7 +9,7 @@
  
 <header class="sticky bg-green-700 top-0 drop-shadow-xl dark:drop-shadow-[0_20px_35px_rgba(255,255,255,0.03)]">
    
-    <nav class="flex flex-row mx-72 dark:text-white">
+    <nav class="flex flex-row mx-72 text-white dark:text-white">
    
 <!--logo and name -->
      <div class="items-end font-bold text-xl flex flex-row p-5 font-serif self-center">
@@ -26,7 +26,7 @@
      
         <div class="items-end flex-grow p-5 list-none self-center text-xl font-semibold">
             <ul class="list-none ul flex flex-row-reverse">
-              <li class="mx-4 order-last  hover:underline">?????????</li>
+              <li class="mx-4 order-last  hover:underline"><a href="{base}/news">News</a></li>
               <li class="mx-4 hover:underline">
 
                    <Button btnClass="flex justify-between items-center"><Chevron>Manschaften</Chevron></Button>
@@ -52,9 +52,9 @@
 
 
 
-<footer class="bg-green-700 h-12 dark:text-white ">
+<footer class="bg-green-700 h-12 text-white dark:text-white ">
     <div class="mx-6">
-    <p>© SV Eintracht Reichenwalde - 2022</p>
+    <p class="p">© SV Eintracht Reichenwalde - 2022</p>
     <div class="flex flex-row list-none">
       <li class="mr-3 hover:underline">Impressum</li>
       <li class="mr-3 hover:underline"><a href="{base}/kontakt">Kontakt</a></li>
