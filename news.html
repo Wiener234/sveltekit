@@ -16,7 +16,9 @@
 		<link rel="modulepreload" href="/sveltekit/_app/immutable/entry/_layout.svelte.3605f047.js">
 		<link rel="modulepreload" href="/sveltekit/_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="/sveltekit/_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="/sveltekit/_app/immutable/entry/manschaften-c-jugend-page.svelte.f1b818bc.js">
+		<link rel="modulepreload" href="/sveltekit/_app/immutable/entry/news-page.svelte.e2475035.js">
+		<link rel="modulepreload" href="/sveltekit/_app/immutable/entry/news-page.js.ca8dcb7d.js">
+		<link rel="modulepreload" href="/sveltekit/_app/immutable/chunks/_page.f4ab3edf.js">
 	</head>
 	<body data-sveltekit-preload-data="hover" class="h-full dark:bg-black">
 		<div style="display: contents">
@@ -39,7 +41,15 @@
    
               <li class="mx-4 order-first hover:underline"><a href="/sveltekit/kontakt">Kontakt</a></li></ul></div></nav></header>
 
-   <main class="text-black dark:text-white dark:bg-gray-800 min-h-full mx-72 my-10"><div><h1>C-Jugend</h1></div></main>
+   <main class="text-black dark:text-white dark:bg-gray-800 min-h-full mx-72 my-10"><h1>News</h1>
+<br>
+<ul class="ul"><li><h2 class="font-bold"><a class="hover:underline" href="/sveltekit/news/1">Test News
+                </a></h2>
+            Veröffentlicht: 01-03-2023
+        </li><li><h2 class="font-bold"><a class="hover:underline" href="/sveltekit/news/2">template
+                </a></h2>
+            Veröffentlicht: d-m-y
+        </li></ul></main>
 
 
 
@@ -49,7 +59,7 @@
       <li class="mr-3 hover:underline"><a href="/sveltekit/kontakt">Kontakt</a></li></div></div></footer>
 
 
-			
+			<script type="application/json" data-sveltekit-fetched data-url="/sveltekit/api/news">{"status":200,"statusText":"","headers":{},"body":"[{\"meta\":{\"title\":\"Test News\",\"date\":\"01-03-2023\"},\"path\":\"/sveltekit/news/1\"},{\"meta\":{\"title\":\"template\",\"date\":\"d-m-y\"},\"path\":\"/sveltekit/news/2\"}]"}</script>
 			<script>
 				{
 					__sveltekit_1j8o1xb = {
@@ -65,7 +75,7 @@
 						import("/sveltekit/_app/immutable/entry/app.cbb53c5d.js")
 					]).then(([kit, app]) => {
 						kit.start(app, __sveltekit_1j8o1xb.element, {
-							node_ids: [0, 4],
+							node_ids: [0, 7],
 							data,
 							form: null,
 							error: null
