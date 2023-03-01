@@ -21,6 +21,13 @@
         margin-right: 0;
         padding-left: 40px;
     }
+    /* Custom style tags for website*/
+    .ul{ /* to disable ul styling | add to every ul element*/
+        dislplay: block;
+        list-style-type: none;
+        padding-left: 0;
+        margin-top: 0;
+    }
 }
 
 /* Custom style tags for markdown */
@@ -28,3 +35,5 @@
     list-style-type: none;
     padding-left: 20px;
 }
+
+
