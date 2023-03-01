@@ -1,5 +1,7 @@
+import {base} from '$app/paths'
+
 export const load = async ({ fetch }) => {
-    const response = await fetch (`/api/news`)
+    const response = await fetch (`${base}/api/news`)
     const posts = await response.json()
 
     return {
