@@ -22,7 +22,7 @@
         padding-left: 40px;
     }
     p {
-       padding-left: 80px; 
+       margin-left: 4em; 
        text-align: left;
         
     }
@@ -43,7 +43,7 @@
         margin-top: 0;
     }
     .p{
-        padding-left: 0;
+        margin-left: 0;
         text-align: left;
     }
 }
@@ -54,4 +54,11 @@
     padding-left: 20px;
 }
 
-
+/* hidde scrollbar */
+html::-webkit-scrollbar{
+    display: none;
+}
+html{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

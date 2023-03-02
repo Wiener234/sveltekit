@@ -21,7 +21,7 @@
      </div> -->
 
 
-<Navbar let:hidden let:toggle color="bg-green-700" navDivClass="flex text-white text-xl font-bold items-center justify-between mx-auto min-md:flex-row max-md:flex-wrap">
+<Navbar let:hidden let:toggle color="none" navDivClass="flex text-white text-xl font-bold items-center justify-between mx-auto min-md:flex-row max-md:flex-wrap">
   <NavBrand href="{base}/">
     <img
       src="https://www.fussball.de/export.media/-/action/getLogo/format/2/id/00ES8GNBJO0000A0VV0AG08LVUPGND5I"
@@ -32,7 +32,7 @@
       SV Eintracht Reichenwalde
     </span>
   </NavBrand>
-  <NavHamburger on:click={toggle} class="bg-green-700 text-white hover:border-0 fill:border-0 focus:ring-green-700" shadow="null"/>
+  <NavHamburger on:click={toggle} class="text-white hover:border-0 fill:border-0 focus:ring-green-700 hover:bg-white" shadow="null"/>
   <NavUl {hidden} ulClass="text-white bg-green-700 border-0 flex flex-col md:flex-row ul self-center p-5 md:items-end">
     <NavLi href="{base}/news" nonActiveClass="hover:underline md:mx-4">News</NavLi>
     <Button id="nav-menu" btnClass="hover:underline md:mx-4 flex items-center justify-between"><Chevron>Manschaften</Chevron></Button>
@@ -45,17 +45,6 @@
 
   </NavUl>
 </Navbar>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -83,7 +72,7 @@
     </nav>-->
 </header>
 
-   <main class="text-black dark:text-white dark:bg-gray-800  min-h-full max-w-4xl mx-auto my-10">
+   <main class="text-black dark:text-white dark:bg-gray-800 min-h-full max-w-3xl p-3 mx-auto my-10">
     <slot></slot>
    </main>
 
