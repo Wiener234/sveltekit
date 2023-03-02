@@ -25,15 +25,15 @@
   <NavBrand href="{base}/">
     <img
       src="https://www.fussball.de/export.media/-/action/getLogo/format/2/id/00ES8GNBJO0000A0VV0AG08LVUPGND5I"
-      class="mr-3 h-11 sm:h-14 m-3 rounded-full"
+      class="img mr-3 h-11 sm:h-14 m-3 rounded-full"
       alt="SV Eintracht Reichenwalde Logo"
     />
     <span class="self-center whitespace-normal sm:text-3xl text-sm font-semibold dark:text-white">
       SV Eintracht Reichenwalde
     </span>
   </NavBrand>
-  <NavHamburger on:click={toggle} class="text-white hover:border-0 fill:border-0 focus:ring-green-700 hover:bg-white" shadow="null"/>
-  <NavUl {hidden} ulClass="text-white bg-green-700 border-0 flex flex-col md:flex-row ul self-center p-5 md:items-end">
+  <NavHamburger on:click={toggle} class="text-white hover:border-0 dark:text-white fill:border-0 focus:ring-green-700 hover:bg-white" shadow="null"/>
+  <NavUl {hidden} ulClass="text-white bg-green-700 dark:bg-green-700 dark:text-white border-0 flex flex-col md:flex-row ul self-center p-5 md:items-end">
     <NavLi href="{base}/news" nonActiveClass="hover:underline md:mx-4">News</NavLi>
     <Button id="nav-menu" btnClass="hover:underline md:mx-4 flex items-center justify-between"><Chevron>Manschaften</Chevron></Button>
     <NavLi href="{base}/kontakt" nonActiveClass="hover:underline md:mx-4">Kontakt</NavLi>
@@ -47,29 +47,6 @@
 </Navbar>
 
 
-
-
-
-
-<!--        <div class="items-end flex-grow p-5 list-none self-center text-xl font-semibold hidden">
-            <ul class="list-none ul flex flex-row-reverse">
-              <li class="mx-4 order-last  hover:underline"><a href="{base}/news">News</a></li>
-              <li class="mx-4 hover:underline">
-
-                   <Button btnClass="flex justify-between items-center"><Chevron>Manschaften</Chevron></Button>
-                   <Dropdown class="ul w-44">
-                       <DropdownItem><a href="{base}/manschaften/c-jugend">C-Jugend</a></DropdownItem>
-                       <DropdownItem><a href="{base}/manschaften/d-jugend">D-Jugend</a></DropdownItem>
-                       <DropdownItem><a href="{base}/manschaften/e-jugend">E-Jugend</a></DropdownItem>
-                   </Dropdown>
-               </li>
-   
-   
-              <li class="mx-4 order-first hover:underline"><a href="{base}/kontakt">Kontakt</a></li>
-            </ul>
-        </div>
-
-    </nav>-->
 </header>
 
    <main class="text-black dark:text-white dark:bg-gray-800 min-h-full max-w-3xl p-3 mx-auto my-10">
@@ -83,7 +60,7 @@
     <div class="mx-6">
     <p class="p">© SV Eintracht Reichenwalde - 2022</p>
     <div class="flex flex-row list-none">
-      <li class="mr-3 hover:underline">Impressum</li>
+      <li class="mr-3 hover:underline"><a href="{base}/impressum">Impressum</a></li>
       <li class="mr-3 hover:underline"><a href="{base}/kontakt">Kontakt</a></li>
     </div>
     </div>

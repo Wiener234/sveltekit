@@ -7,6 +7,9 @@
     <h1>News</h1>
     <br/>
     <ul class="ul">
+    {#if posts ==0}
+        <h2>News werden bald erwartet.</h2>
+    {/if}
         {#each posts as post}
             <li>
                 <h2 class="font-bold">
