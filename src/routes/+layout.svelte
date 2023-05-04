@@ -50,7 +50,9 @@
 </header>
 
    <main class="text-black dark:text-white dark:bg-gray-800 min-h-full max-w-3xl p-3 mx-auto my-10">
+    <div class="markdown">
     <slot></slot>
+    </div>
    </main>
 
 
