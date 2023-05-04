@@ -849,30 +849,8 @@ input[type="range"].range-lg::-moz-range-thumb {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-    ul {
-        display: block;
-        list-style-type: disc;
-        margin-top: 1em;
-        margin-bottom: 1 em;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 40px;
-    }
-    p {
-       margin-left: 4em; 
-       text-align: left;
-        
-    }
-    img {
-        height: auto;
-        margin-left: auto;
-        padding-left: 4rem;
-        padding-right: 1rem;
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
-        display: block;
-        margin-right: auto
-    }
+    
+    
 
 
     /* Custom style tags for news site*/
@@ -885,21 +863,41 @@ input[type="range"].range-lg::-moz-range-thumb {
     /* Custom style tags for website*/
     .ul{ /* to disable ul styling | add to every ul element*/
         display: block;
-        list-style-type: none;
-        padding-left: 0;
-        margin-top: 0;
+        list-style-type: none !important;
+        padding-left: 0 !important;
+        margin: 0 !important;
     }
+
     .p{
+        padding: 0 0 0 0;
+        font-size: 1rem;
+        line-height: 1.5rem;
         margin-left: 0;
         text-align: left;
     }
+    
+    
     .\!img{
         margin: 0 !important;
         padding: 0 !important;
     }
+    
+    
     .img{
         margin: 0;
         padding: 0;
+    }
+    @media (min-width: 640px) {
+        img{
+            padding-left: 4rem;
+            padding-right: 4rem/* 40px */;
+        }
+    }
+    @media (max-width: 640px) {
+        img{
+            padding-left: 1.5rem;
+            padding-right: 1.5rem/* 40px */;
+        }
     }
 
 *, ::before, ::after {
@@ -1312,9 +1310,6 @@ input[type="range"].range-lg::-moz-range-thumb {
 }
 .mr-4 {
   margin-right: 1rem;
-}
-.mr-auto {
-  margin-right: auto;
 }
 .mt-1 {
   margin-top: 0.25rem;
@@ -2689,9 +2684,6 @@ input[type="range"].range-lg::-moz-range-thumb {
 .pr-9 {
   padding-right: 2.25rem;
 }
-.pt-10 {
-  padding-top: 2.5rem;
-}
 .pt-3 {
   padding-top: 0.75rem;
 }
@@ -3267,6 +3259,66 @@ input[type="range"].range-lg::-moz-range-thumb {
     list-style-type: none;
     padding-left: 20px;
 }
+
+/*custom style for every other markdown*/
+.markdown p{
+    padding-top: 2.25rem/* 12px */;
+    padding-bottom: 0.75rem/* 12px */;
+    padding-left: 1.5rem/* 24px */;
+    padding-right: 1.5rem/* 24px */;
+    font-size: 1.125rem/* 18px */;
+    line-height: 1.75rem/* 28px */;
+}
+.markdown img{
+    /* margin-left: 0;
+    margin-right: 0;
+    margin-top: 2.5rem/* 40px ;
+    margin-bottom: 2.5rem/* 40px ; */
+    height: auto;
+    margin-left: auto;
+    padding-top: 2.5rem;
+    padding-bottom: 2.25rem;
+    display: block;
+    margin-right: auto
+}
+
+/* custom style for impressum list */
+.markdown ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 2.5em;
+    margin-left: 4rem;
+    margin-right: 0;
+    list-style: none;
+}
+
+
+/* custom style for markdown blog*/
+.markdownNews p{
+    margin-left: 4em; 
+    text-align: left;
+    padding:0 0 0 0;
+    font-size: 1rem/* 18px */;
+    line-height: 1.5rem/* 28px */;
+     
+ }
+ .markdownNewsPublished{
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+    padding: 0 !important;
+ }
+ .markdownNews img {
+    height: auto;
+    margin-left: auto;
+    padding-left: 4rem;
+    padding-right: 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    display: block;
+    margin-right: auto
+}
+
+
 
 /* hidde scrollbar */
 html::-webkit-scrollbar{
@@ -5057,11 +5109,6 @@ html{
 
   .sm\:order-last {
     order: 9999;
-  }
-
-  .sm\:mx-10 {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
   }
 
   .sm\:mb-0 {
