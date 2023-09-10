@@ -3,7 +3,6 @@
     //import {Button, Dropdown, DropdownItem, Chevron} from 'flowbite-svelte'
     import {base} from '$app/paths'
     import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Dropdown, DropdownItem, Chevron, Button, SidebarDropdownItem,SidebarDropdownWrapper } from 'flowbite-svelte'
-    
 </script>
    
    
@@ -24,24 +23,26 @@
 <Navbar let:hidden let:toggle color="none" navDivClass="flex text-white text-xl font-bold items-center justify-between mx-auto min-md:flex-row max-md:flex-wrap">
   <NavBrand href="{base}/">
     <img
+      on:click={() => (hidden)? "":toggle()}
       src="https://www.fussball.de/export.media/-/action/getLogo/format/2/id/00ES8GNBJO0000A0VV0AG08LVUPGND5I"
       class="img mr-3 h-11 sm:h-14 m-3 rounded-full"
       alt="SV Eintracht Reichenwalde Logo"
     />
-    <span class="self-center whitespace-normal sm:text-3xl text-sm font-semibold dark:text-white">
+    <span on:click={() => (hidden)? "":toggle()} class="self-center whitespace-normal sm:text-3xl text-sm font-semibold dark:text-white">
       SV Eintracht Reichenwalde
     </span>
   </NavBrand>
   <NavHamburger on:click={toggle} class="text-white hover:border-0 dark:text-white fill:border-0 focus:ring-green-700 hover:bg-white" shadow="null"/>
   <NavUl {hidden} ulClass="text-white bg-green-700 dark:bg-green-700 dark:text-white border-0 flex flex-col md:flex-row ul self-center p-5 md:items-end">
-    <NavLi href="{base}/news" nonActiveClass="hover:underline md:mx-4">News</NavLi>
+    <NavLi on:click={() => (hidden)? "":toggle()} href="{base}/" nonActiveClass="hover:underline md:mx-4">Home</NavLi>
+    <NavLi on:click={() => (hidden)? "":toggle()} href="{base}/news" nonActiveClass="hover:underline md:mx-4">News</NavLi>
     <Button id="nav-menu" btnClass="hover:underline md:mx-4 flex items-center justify-between max-md:hidden"><Chevron>Manschaften</Chevron></Button>
-    <SidebarDropdownWrapper label="Manschaften" btnClass="hover:underline md:mx-4 max-md:flex items-center justify-between hidden text-white">
+    <SidebarDropdownWrapper label="Manschaften" btnClass="py-2 hover:underline md:mx-4 max-md:flex items-center justify-between hidden text-white">
       <SidebarDropdownItem on:click={toggle} label="C-Jugend" class="text-white" href="{base}/manschaften/c-jugend" />
       <SidebarDropdownItem on:click={toggle} label="D-Jugend" class="text-white" href="{base}/manschaften/d-jugend" />
       <SidebarDropdownItem on:click={toggle} label="E-Jugend" class="text-white" href="{base}/manschaften/e-jugend" />
     </SidebarDropdownWrapper>
-    <NavLi href="{base}/kontakt" nonActiveClass="hover:underline md:mx-4">Kontakt</NavLi>
+    <NavLi on:click={() => (hidden)? "":toggle()} href="{base}/kontakt" nonActiveClass="hover:underline md:mx-4">Kontakt</NavLi>
     <Dropdown triggeredBy="#nav-menu" class="ul w-44 z-20 ">
       <DropdownItem><a href="{base}/manschaften/c-jugend">C-Jugend</a></DropdownItem>
       <DropdownItem><a href="{base}/manschaften/d-jugend">D-Jugend</a></DropdownItem>
