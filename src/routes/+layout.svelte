@@ -37,9 +37,9 @@
     <NavLi href="{base}/news" nonActiveClass="hover:underline md:mx-4">News</NavLi>
     <Button id="nav-menu" btnClass="hover:underline md:mx-4 flex items-center justify-between max-md:hidden"><Chevron>Manschaften</Chevron></Button>
     <SidebarDropdownWrapper label="Manschaften" btnClass="hover:underline md:mx-4 max-md:flex items-center justify-between hidden text-white">
-      <SidebarDropdownItem label="C-Jugend" class="text-white" href="{base}/manschaften/c-jugend" />
-      <SidebarDropdownItem label="D-Jugend" class="text-white" href="{base}/manschaften/d-jugend" />
-      <SidebarDropdownItem label="E-Jugend" class="text-white" href="{base}/manschaften/e-jugend" />
+      <SidebarDropdownItem on:click={toggle} label="C-Jugend" class="text-white" href="{base}/manschaften/c-jugend" />
+      <SidebarDropdownItem on:click={toggle} label="D-Jugend" class="text-white" href="{base}/manschaften/d-jugend" />
+      <SidebarDropdownItem on:click={toggle} label="E-Jugend" class="text-white" href="{base}/manschaften/e-jugend" />
     </SidebarDropdownWrapper>
     <NavLi href="{base}/kontakt" nonActiveClass="hover:underline md:mx-4">Kontakt</NavLi>
     <Dropdown triggeredBy="#nav-menu" class="ul w-44 z-20 ">
