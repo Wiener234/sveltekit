@@ -2,7 +2,7 @@
     import "../app.css"
     //import {Button, Dropdown, DropdownItem, Chevron} from 'flowbite-svelte'
     import {base} from '$app/paths'
-    import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Dropdown, DropdownItem, Chevron, Button } from 'flowbite-svelte'
+    import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Dropdown, DropdownItem, Chevron, Button, SidebarDropdownItem,SidebarDropdownWrapper } from 'flowbite-svelte'
     
 </script>
    
@@ -35,9 +35,14 @@
   <NavHamburger on:click={toggle} class="text-white hover:border-0 dark:text-white fill:border-0 focus:ring-green-700 hover:bg-white" shadow="null"/>
   <NavUl {hidden} ulClass="text-white bg-green-700 dark:bg-green-700 dark:text-white border-0 flex flex-col md:flex-row ul self-center p-5 md:items-end">
     <NavLi href="{base}/news" nonActiveClass="hover:underline md:mx-4">News</NavLi>
-    <Button id="nav-menu" btnClass="hover:underline md:mx-4 flex items-center justify-between"><Chevron>Manschaften</Chevron></Button>
+    <Button id="nav-menu" btnClass="hover:underline md:mx-4 flex items-center justify-between max-md:hidden"><Chevron>Manschaften</Chevron></Button>
+    <SidebarDropdownWrapper label="Manschaften" btnClass="hover:underline md:mx-4 max-md:flex items-center justify-between hidden text-white">
+      <SidebarDropdownItem label="C-Jugend" class="text-white" href="{base}/manschaften/c-jugend" />
+      <SidebarDropdownItem label="D-Jugend" class="text-white" href="{base}/manschaften/d-jugend" />
+      <SidebarDropdownItem label="E-Jugend" class="text-white" href="{base}/manschaften/e-jugend" />
+    </SidebarDropdownWrapper>
     <NavLi href="{base}/kontakt" nonActiveClass="hover:underline md:mx-4">Kontakt</NavLi>
-    <Dropdown triggeredBy="#nav-menu" class="ul w-44 z-20">
+    <Dropdown triggeredBy="#nav-menu" class="ul w-44 z-20 ">
       <DropdownItem><a href="{base}/manschaften/c-jugend">C-Jugend</a></DropdownItem>
       <DropdownItem><a href="{base}/manschaften/d-jugend">D-Jugend</a></DropdownItem>
       <DropdownItem><a href="{base}/manschaften/e-jugend">E-Jugend</a></DropdownItem>
